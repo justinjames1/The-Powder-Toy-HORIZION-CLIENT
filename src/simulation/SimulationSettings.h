@@ -1,5 +1,12 @@
 #pragma once
 
+enum performanceMode
+{
+
+PM_on,
+PM_off,
+
+};
 enum EdgeMode
 {
 	EDGE_VOID,

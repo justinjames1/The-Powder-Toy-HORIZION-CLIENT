@@ -66,6 +66,7 @@ inline ByteString IntroText()
 	      "Use \bo'H'\bg to toggle the HUD. Use \bo'D'\bg to toggle debug mode in the HUD.\n"
 	      "Use \bo'Z'\bg for a zoom tool. Click to make the drawable zoom window stay around. Use the wheel to change the zoom strength.\n"
 	      "Use \boCtrl+F\bg to highlight a selected element on the screen.\n"
+		  "HORZION CLIENT in search of power.\n"
 	      "\n";
 	if constexpr (BETA)
 	{

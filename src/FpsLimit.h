@@ -7,8 +7,8 @@ struct FpsLimitNone
 struct FpsLimitExplicit
 {
 	using ValueType = float;
-	static constexpr ValueType minSane = 3.f;
-	static constexpr ValueType maxSane = 1000.f;
+	static constexpr ValueType minSane = 1.f;
+	static constexpr ValueType maxSane = 10000000.f;
 	ValueType value;
 };
 using SimFpsLimit = std::variant<FpsLimitNone, FpsLimitExplicit>;
@@ -24,7 +24,7 @@ struct DrawLimitExplicit
 {
 	using ValueType = int;
 	static constexpr ValueType minSane = 1;
-	static constexpr ValueType maxSane = 1000;
+	static constexpr ValueType maxSane = 10000000;
 	ValueType value;
 };
 // TODO: DrawLimitVsync

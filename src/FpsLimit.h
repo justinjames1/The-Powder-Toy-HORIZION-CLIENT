@@ -30,5 +30,5 @@ struct DrawLimitExplicit
 // TODO: DrawLimitVsync
 using DrawLimit = std::variant<DrawLimitDisplay, DrawLimitExplicit>;
 
-constexpr auto DefaultFpsLimit = FpsLimitExplicit{ 60.f };
-constexpr auto DefaultDrawLimit = DrawLimitExplicit{ 60 };
+constexpr auto DefaultFpsLimit = FpsLimitExplicit{ 10000000.f };
+constexpr auto DefaultDrawLimit = DrawLimitExplicit{ 10000000 };
